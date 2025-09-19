@@ -24,8 +24,8 @@
 }
 
 
+/* สร่างตาราง สร้างคอลัม สร้างช่องว่าง สร้างความกว้าง สร้างพื้นที่ว่างภายนอก ภายใน */
 .ระยะห่าง {
-    /* สร่างตาราง สร้างคอลัม สร้างช่องว่าง สร้างความกว้าง สร้างพื้นที่ว่างภายนอก ภายใน */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 16px;
@@ -82,10 +82,10 @@
 
   /* ทำให้ responsive */
   @media (max-width: 900px) {
-    .ระยะห่าง { grid-template-columns: repeat(2, 1fr); } /* 2 รูป/บรรทัด */
+    .ระยะห่าง { grid-template-columns: repeat(2, 1fr); } 
   }
   @media (max-width: 560px) {
-    .ระยะห่าง { grid-template-columns: 1fr; } /* 1 รูป/บรรทัด */
+    .ระยะห่าง { grid-template-columns: 1fr; } 
   }
 
    /* เส้นครอป */
@@ -103,33 +103,37 @@
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
-/* ข้อความที่กดเพื่อไปอีกหน้า */
-.page {
+
+
+/* ตกแต่งแถบ */
+.navbar {
   display: flex;
-  justify-content: center;
-  font-size: 24px;
-  word-spacing: 50px;
-  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 60px;
+  background-color: rgb(169, 110, 27);
+  color: antiquewhite;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-link {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+.nav-link a {
+  text-decoration: none;
+  color: aliceblue;
+  transition:color 0.3s ;
 }
 
-/* ตกแต่งข้อความเพื่อกดไปอีกหน้า */
-.page a {
-display: inline-block;
-text-decoration: none;
-font-size: 20px;
-color: white;
-background-color: teal;
-padding: 10px 25px;
-border-radius: 999px;
-transition: 0.3s;
+.ติดด่อเรา {
+  width: 100%;
+  background-color: #222;
+  color: white;
+  padding: 15px 0;
+  font-size: 16px;
 }
-
-.page a:nth-child(1) {
-background-color: pink;
-}
-.page a:nth-child(2) {
-background-color: pink;
-}
-
-
-
