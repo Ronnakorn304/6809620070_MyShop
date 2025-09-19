@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.หัวข้อบนสุด {
+    
+    background-color: rgb(235, 183, 88);
+    color: aliceblue;
+    text-align: center;
+    width: 100%; height: 90px; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 20px;
+    justify-content: center; 
+    padding: 30px 15px;
+     font-weight: 800;
+    font-style: normal;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+}
+
+ h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+
+.ระยะห่าง {
+    /* สร่างตาราง สร้างคอลัม สร้างช่องว่าง สร้างความกว้าง สร้างพื้นที่ว่างภายนอก ภายใน */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+  /* เส้นขอบรูป */
+ .menu {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  /* รูป */
+  .menu .pic {
+    aspect-ratio: 50 / 35; 
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .menu .ข้อความใต้รูป {
+    padding: 10px 12px;
+  }
+
+  .menu h3 {
+    margin: 0 0 6px;
+    font-size: 1rem;
+  }
+
+  /* ขนาดฟ้อน */
+  .menu p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.85;
+  }
+
+  /* เรื่องราว */
+  fieldset {
+    display: block;
+    min-inline-size: min-content;
+    margin-inline: 2px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: white;
+    border-image: initial;
+    padding-block: 0.35em 0.625em;
+    padding-inline: 0.75em;
+}
+
+
+  
+
+  /* ทำให้ responsive */
+  @media (max-width: 900px) {
+    .ระยะห่าง { grid-template-columns: repeat(2, 1fr); } /* 2 รูป/บรรทัด */
+  }
+  @media (max-width: 560px) {
+    .ระยะห่าง { grid-template-columns: 1fr; } /* 1 รูป/บรรทัด */
+  }
+
+   /* เส้นครอป */
+.video1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+/* ขนาด */
+.video1 video,
+.video1 iframe {
+  max-width: 15%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+
+
